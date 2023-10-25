@@ -10,7 +10,7 @@
     - Description: develops a method (MoSh++) which converts mocap marker data to SMPL format model; therefore unifies 15 different optical marker-based mocap datasets to create the largest publicly available database of human motions
 - AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control.
     - SIGGRAPH 2021, UC Berkeley(Xuebin Peng & Pieter Abbeel)
-    - [Website](https://xbpeng.github.io/projects/AMP/index.html), [Original Code](https://github.com/xbpeng/DeepMimic)(using Tensorflow), [Frequently used Code]([nv-tlabs/ASE (github.com)](https://github.com/nv-tlabs/ASE))(using PyTorch and Isaac Gym)
+    - [Website](https://xbpeng.github.io/projects/AMP/index.html), [Original Code](https://github.com/xbpeng/DeepMimic)(using Tensorflow), [Frequently used Code](https://github.com/nv-tlabs/ASE) (using PyTorch and Isaac Gym)
     - Description: using GAIL-like method to learn "**adversarial motion prior**" from a dataset of unstructured motion clips, which pecifies **style-rewards** for training the character through RL.
 
 # LLM Robotics
