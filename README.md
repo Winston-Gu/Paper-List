@@ -25,6 +25,21 @@
 
 # Robotics Locomotion
 
+## Bipedal Robots
+
+- Virtual Passive Dynamic Walking and Energy-based Control Laws
+    - Fumihiko Asano et al.
+    - IROS 2000
+- Extended Virtual Passive Dynamic Walking and Virtual Passitivity-mimicking Control Laws 
+    - Fumihiko Asano et al.
+    - ICRA 2001
+- Parametric Excitation Mechanisms for Dynamic Bipedal Walking
+    - Fumihiko Asano et al.
+    - ICRA 2005
+- Biped Gait Generation and Control Based on a Unified Property of Passive Dynamic Walking
+    - Fumihiko Asano et al.
+    - TRO 2005
+
 
 
 
