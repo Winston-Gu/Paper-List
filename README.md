@@ -20,8 +20,12 @@
     - [Website](https://eureka-research.github.io/), [Arxiv](https://arxiv.org/abs/2310.12931), [Code](https://github.com/eureka-research/Eureka). 
     - Description: Utilize Code LLMs to write reward function code, curriculum learning and RLHF (watch videos and select which is better) makes it even better.
 
-
 # Robotics Manipulation
+
+- MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations
+    - CoRL 2023, Nvidia & Yuke Zhu
+    - [Website](https://mimicgen.github.io/)
+    - Description: "A system for automatically synthesizing large-scale, rich datasets from only a small number of human demonstrations by adapting them to new contexts. "
 
 # Robotics Locomotion
 
