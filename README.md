@@ -2,6 +2,15 @@
 
 
 
+# Offline RL
+
+- SAQ: Action-Quantized Offline Reinforcement Learning for Robotic Skill Learning.
+    - Arxiv 2023, UC Berkeley(Sergey Levine)
+    - [Website](https://saqrl.github.io/), [Code](https://github.com/jianlanluo/SAQ)
+    - Description: Use VQ-VAE to learn state-conditioned **action discretization**, and then implement this discretization on top of Offline RL algorithms such as IQL, CQL, and BRAC.
+
+
+
 # Human-Scene Interaction
 
 - AMASS: Archive of Motion Capture As Surface Shapes.
