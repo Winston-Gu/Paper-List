@@ -8,6 +8,11 @@
     - Arxiv 2023, UC Berkeley(Sergey Levine)
     - [Website](https://saqrl.github.io/), [Code](https://github.com/jianlanluo/SAQ)
     - Description: Use VQ-VAE to learn state-conditioned **action discretization**, and then implement this discretization on top of Offline RL algorithms such as IQL, CQL, and BRAC.
+- What Matters in Learning from Offline Human Demonstrations for Robot Manipulation
+    - CoRL 2021 Oral, Stanford (Feifei Li) & UT Austin (Yuke Zhu)
+    - [Website](https://robomimic.github.io/), [Code](https://github.com/ARISE-Initiative/robomimic), [Blogpost](https://robomimic.github.io/study/)
+    - Description: Conduct an extensive study on utilizing offline RL algorithms for robot manipulation tasks with datasets of varying quality. Also, propose **robomimic**, a framework for robot learning from demonstration.
+
 
 
 
@@ -21,6 +26,16 @@
     - SIGGRAPH 2021, UC Berkeley(Xuebin Peng & Pieter Abbeel)
     - [Website](https://xbpeng.github.io/projects/AMP/index.html), [Original Code](https://github.com/xbpeng/DeepMimic)(using Tensorflow), [Frequently used Code](https://github.com/nv-tlabs/ASE) (using PyTorch and Isaac Gym)
     - Description: using GAIL-like method to learn "**adversarial motion prior**" from a dataset of unstructured motion clips, which pecifies **style-rewards** for training the character through RL.
+- RFC: Residual Force Control for Agile Human Behavior Imitation and Extended Motion Synthesis
+    - NeurIPS 2020, CMU RI(Kris M. Kitani)
+    - [Website](https://www.ye-yuan.com/rfc), [Code](https://github. com/Khrylx/RFC)
+    - Description: Add a **residual** force control term to alleviate the **dynamics mismatch** problem in physics-based humanoid motion synthesis.
+
+- PHC: Perpetual Humanoid Control for Real-time Simulated Avatars
+    - ICCV 2023, CMU RI (Zhengyi Luo)
+    - [Website](https://zhengyiluo.github.io/PHC/), [Zhihu](https://zhuanlan. zhihu. com/p/663592305)
+    - Description: Learn from large-scale motion databases using a single policy within the general framework of **goal-conditioned RL**, similar to previous works such as AMP. To alleviate the 'catastrophic forgetting' problem, employ **progressive learning methods**, including hard negative mining and progressive neural networks.
+
 
 # LLM Robotics
 
