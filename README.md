@@ -12,7 +12,10 @@
     - CoRL 2021 Oral, Stanford (Feifei Li) & UT Austin (Yuke Zhu)
     - [Website](https://robomimic.github.io/), [Code](https://github.com/ARISE-Initiative/robomimic), [Blogpost](https://robomimic.github.io/study/)
     - Description: Conduct an extensive study on utilizing offline RL algorithms for robot manipulation tasks with datasets of varying quality. Also, propose **robomimic**, a framework for robot learning from demonstration.
-
+- Offline RL with Observation Histories: Analyzing and Improving Sample Complexity
+    - Arrive 2023, UC Berkeley (Sergey Levine)
+    - [Arxiv](https://arxiv.org/abs/2310.20663)
+    - Description: Use representation learning methods (bisimulation learning, following the work by Amy Zhang and Sergey) to help Offline RL Algorithms 'stitch' in latent space under POMDP settings.
 
 
 
