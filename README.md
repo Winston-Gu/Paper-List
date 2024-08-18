@@ -22,6 +22,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - CoRL 2023, Learning to See Physical Properties with Active Sensing Motor Policies. [Website](https://gmargo11.github.io/active-sensing-loco/). Active Sensing: adding the error of physical properties estimation into reward function.
 - RSS 2023, Demonstrating a Walk in the Park: Learning to Walk in 20 Minutes With Model-Free Reinforcement Learning. [Website](https://sites.google.com/berkeley.edu/walk-in-the-park), [Code](https://github.com/ikostrikov/walk_in_the_park). Learning locomotion directly in real world, using SAC algorithms in Jax.
 - IROS 2023, Hierarchical Adaptive Control for Collaborative Manipulation of a Rigid Object by Quadrupedal Robots. [Paper](https://arxiv.org/abs/2303.06741).
+- ICRA 2023, Legs as Manipulator: Pushing Quadrupedal AgilityBeyond Locomotion. [Website](https://robot-skills.github.io/). Use one front leg as manipulator. First train locomotion and manipulation policy respectively, and then learn a behavior tree from demonstration to stitch previous skills together.
 - ICRA 2023, Hierarchical Adaptive Loco-manipulation Control for Quadruped Robots. [Paper](https://arxiv.org/abs/2209.13145). An adaptive controller to solve the locomotion and manipulation tasks simultaneously. Use the position and velocity error to update the adaptive controller for manipulations.
 - arXiv 2022.03, RoLoMa: Robust Loco-Manipulation for Quadruped Robots with Arms. [Paper](https://arxiv.org/abs/2203.01446)
 - CoRL 2022, Oral. Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior. [Website](https://sites.google.com/view/gait-conditioned-rl/), [Github](https://github.com/Improbable-AI/walk-these-ways). Multiplicity of Behavior (MoB): learning a single policy that encodes a structured family of locomotion strategies that solve training tasks in different ways.
@@ -31,6 +32,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - :star: Science Robotics 2022, Learning Robust Perceptive Locomotion for Quadrupedal Robots in the Wild. [Paper](https://www.science.org/doi/10.1126/scirobotics.abk2822). Adding a belief state encoder based on attention mechanism, which can fuse perceptive information and proprioceptive information.
 - IROS 2021, Adaptive Force-based Control for Legged Robots. [Paper](https://arxiv.org/abs/2011.06236). L1 adaptive control law, force-based control.
 - CoRL 2021, Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning. [Paper](https://arxiv.org/abs/2109.11978).
+- Science Robotics, 2020, Multi-Expert Learning of Adaptive Legged Locomotion. [Paper](https://www.science.org/doi/10.1126/scirobotics.abb2174). Use gating neural network to learn the combination of expert skill networks.
 - Science Robotics 2020, Learning Quadrupedal Locomotion over Challenging Terrain. [Paper](https://arxiv.org/abs/2010.11251).
 - ICRA 2019, ALMA - Articulated Locomotion and Manipulation for a Torque-Controllable Robot. [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8794273). Track operational space motion and force references with a wholebody control algorithm that generates torque references for all the controllable joints by using hierarchical optimization.
 - ACC 2015, L1 Adaptive Control for Bipedal Robots with Control Lyapunov Function based Quadratic Programs. [Paper](https://ieeexplore.ieee.org/document/7170842).
@@ -38,6 +40,8 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 
 # Robotics Manipulation
+- arXiv 2024.08, Real-time Dexterous Telemanipulation with an End-Effect-Oriented Learning-based Approach. [Paper](https://arxiv.org/abs/2408.00853). First using DDPG to train robots to follow operator's command offline, then test it online.
+- :star: RSS 2024, Dynamic On-Palm Manipulation via Controlled Sliding. [Website](https://dynamic-controlled-sliding.github.io/), [Code](https://github.com/DAIRLab/dairlib/tree/plate_balancing/examples/franka). Using hierarchical control methods: The system is modeled as LCS (Linear Complementarity Model), and then use C3 (Complementary Consensus Control) algorithms to solve. Low-level OSC tracking controller track the end-effector positions and force given by MPC.
 - :star: RSS 2024, Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots. [Website](https://umi-gripper.github.io/), [Code](https://github.com/real-stanford/universal_manipulation_interface). A data collection framework.
 - RSS 2024, Learning Manipulation by Predicting Interaction. [Website](https://opendrivelab.github.io/mpi.github.io/), [Code](https://github.com/OpenDriveLab/MPI).
 - RA-L 2024, On the Role of the Action Space in Robot Manipulation Learning and Sim-to-Real Transfer, [Arxiv](https://arxiv.org/abs/2312.03673). Benchmarked 13 action spaces in FRANKA manipulation skills learning.
