@@ -5,10 +5,13 @@ I will try to summarize each paper in one sentence. Important papers will be mar
 Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List).
 
 # Legged Robots
+
 - arXiv 2024.07, Berkeley Humanoid: A Research Platform for Learning-based Control. [Website](https://berkeley-humanoid.com/). A low-cost, DIY-style, mid-scale humanoid robot.
 - arXiv 2024.07, Wheeled Humanoid Bilateral Teleoperation with Position-Force Control Modes for Dynamic Loco-Manipulation. [Paper](https://arxiv.org/abs/2407.12189). Designed a system to retarget human loco-manipulation into a small wheeled robot with hands.
 - :star: arXiv 2024.7, UMI on Legs: Making Manipulation Policies Mobile with Manipulation-Centric Whole-body Controllers. [Website](https://umi-on-legs.github.io/), [Code](https://umi-on-legs.github.io/).Use end-effector trajectories in the task frame as interface between manipulation policy and wholebody controller.
 - arXiv 2024.06, SLR: Learning Quadruped Locomotion without Privileged Information. [Website](https://11chens.github.io/SLR/). Learning some representation and state transition model. Quite confused because of the poor writing.
+- arXiv 2024.05, Impedance Matching: Enabling an RL-Based Running Jump in a Quadruped Robot. [Paper](https://arxiv.org/abs/2404.15096v1). Sim-to-real synchronization based on frequency-domain analysis.
+- arXiv 2024.05, Combining Teacher-Student with Representation Learning: A Concurrent Teacher-Student Reinforcement Learning Paradigm for Legged Locomotion. [Paper](https://arxiv.org/abs/2405.10830).
 - arXiv 2024.04, DiffuseLoco: Real-Time Legged Locomotion Control with Diffusion from Offline Datasets. [Paper](https://arxiv.org/abs/2404.19264). Use DDPM to learn from offline dataset, introducing delayed input and action predictions tricks for real-time deployment.
 - arXiv 2024.03, VBC: Visual Whole-Body Control for Legged Loco-Manipulation. [Website](https://wholebody-b1.github.io/), [Code](https://github.com/Ericonaldo/visual_wholebody). Decouple into low-level and high-level policy, end-effector positions are the interface.
 - arXiv 2024.03, RoboDuet: A Framework Affording Mobile-Manipulation and Cross-Embodiment. [Website](https://locomanip-duet.github.io/). First train locomotion when arm is fixed, and then train loco policy and arm policy jointly.
@@ -34,12 +37,18 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - CoRL 2021, Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning. [Paper](https://arxiv.org/abs/2109.11978).
 - Science Robotics, 2020, Multi-Expert Learning of Adaptive Legged Locomotion. [Paper](https://www.science.org/doi/10.1126/scirobotics.abb2174). Use gating neural network to learn the combination of expert skill networks.
 - Science Robotics 2020, Learning Quadrupedal Locomotion over Challenging Terrain. [Paper](https://arxiv.org/abs/2010.11251).
+- arXiv 2020.04, Learning Agile Robotic Locomotion Skills by Imitating Animals. [Paper](https://arxiv.org/abs/2004.00784), [Code](https://github.com/erwincoumans/motion_imitation).
+- IROS 2019, Sim-to-Real Transfer for Biped Locomotion. [Paper](https://arxiv.org/abs/1903.01390). Pre-sysID and post-sysID.
 - ICRA 2019, ALMA - Articulated Locomotion and Manipulation for a Torque-Controllable Robot. [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8794273). Track operational space motion and force references with a wholebody control algorithm that generates torque references for all the controllable joints by using hierarchical optimization.
 - ACC 2015, L1 Adaptive Control for Bipedal Robots with Control Lyapunov Function based Quadratic Programs. [Paper](https://ieeexplore.ieee.org/document/7170842).
 - ICRA 2015, Whole-body Pushing Manipulation with Contact Posture Planning of Large and Heavy Object for Humanoid Robot. [Paper](https://ieeexplore.ieee.org/abstract/document/7139995) . Generate pushing motion for humanoid robots, based on ZMP.
 
 
 # Robotics Manipulation
+
+- arXiv 2024.08, RP1M: A Large-Scale Motion Dataset for Piano Playing with Bi-Manual Dexterous Robot Hands. [Website](https://rp1m.github.io/). A dataset built on RoboPianist with shadow hands.
+- arXiv 2024.08, ACE: A Cross-Platform Visual-Exoskeletons System for Low-Cost Dexterous Teleoperation. [Website](https://ace-teleop.github.io/), [Code](https://github.com/ACETeleop/ACETeleop). A teleoperation system.
+- arXiv 2024.08, A Survey of Embodied Learning for Object-Centric Robotic Manipulation. [Paper](https://arxiv.org/abs/2408.11537).
 - arXiv 2024.08, Real-time Dexterous Telemanipulation with an End-Effect-Oriented Learning-based Approach. [Paper](https://arxiv.org/abs/2408.00853). First using DDPG to train robots to follow operator's command offline, then test it online.
 - :star: RSS 2024, Dynamic On-Palm Manipulation via Controlled Sliding. [Website](https://dynamic-controlled-sliding.github.io/), [Code](https://github.com/DAIRLab/dairlib/tree/plate_balancing/examples/franka). Using hierarchical control methods: The system is modeled as LCS (Linear Complementarity Model), and then use C3 (Complementary Consensus Control) algorithms to solve. Low-level OSC tracking controller track the end-effector positions and force given by MPC.
 - :star: RSS 2024, Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots. [Website](https://umi-gripper.github.io/), [Code](https://github.com/real-stanford/universal_manipulation_interface). A data collection framework.
@@ -58,7 +67,10 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Random Papers
 
+- arXiv 2024.08, All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents. [Website](https://imaei.github.io/project_pages/ario/).
+- arXiv 2024.08, Scaling Cross-Embodied Learning: One Policy for Manipulation, Navigation, Locomotion and Aviation. [Website](https://crossformer-model.github.io/), [Code](https://github.com/rail-berkeley/crossformer). Train a transformer policy for cross embodied robots by tokenizing observations and treating actions as readout tokens.
 - arXiv 2024.05, Hierarchical World Models as Visual Whole-Body Humanoid Controllers. [Website](https://www.nicklashansen.com/rlpuppeteer/), [Code](https://github.com/nicklashansen/puppeteer).First train a low-level tracking model using MoCapAct using TD-MPC2, and then train skills on down-stream tasks.
+- arXiv 2024.02, Pushing the Limits of Cross-Embodiment Learning for Manipulation and Navigation. [Website](https://extreme-cross-embodiment.github.io/), [Code](https://github.com/JonathanYang0127/omnimimic/tree/release). A cross embodied transformer policy. Tokenize visual observations and generate actions through a conditional diffusion process.
 - RSS 2024, RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots. [Website](https://robocasa.ai/), [Code](https://github.com/robocasa/robocasa). A large-scale simulation framework, a lot of kitchens.
 - ICLR 2024, Spotlight. TD-MPC2: Scalable, Robust World Models for Continuous Control. [Website](https://www.tdmpc2.com/), [Code](https://github.com/nicklashansen/tdmpc2). Adding some tricks on top of TD-MPC.
 - CoRL 2023 Oral, DATT: Deep Adaptive Trajectory Tracking for Quadrotor Control. [Website](https://sites.google.com/view/deep-adaptive-traj-tracking), [Code](https://github.com/KevinHuang8/DATT). Use L1 adaptive control to estimate disturbance.
