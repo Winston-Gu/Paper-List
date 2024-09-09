@@ -49,6 +49,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Robotics Manipulation
 
+- arXiv 2024.09, Fast Payload Calibration for Sensorless Contact Estimation Using Model Pre-training. [Paper](https://arxiv.org/abs/2409.03369).
 - arXiv 2024.08, RP1M: A Large-Scale Motion Dataset for Piano Playing with Bi-Manual Dexterous Robot Hands. [Website](https://rp1m.github.io/). A dataset built on RoboPianist with shadow hands.
 - arXiv 2024.08, ACE: A Cross-Platform Visual-Exoskeletons System for Low-Cost Dexterous Teleoperation. [Website](https://ace-teleop.github.io/), [Code](https://github.com/ACETeleop/ACETeleop). A teleoperation system.
 - arXiv 2024.08, A Survey of Embodied Learning for Object-Centric Robotic Manipulation. [Paper](https://arxiv.org/abs/2408.11537).
@@ -86,6 +87,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - NeurIPS 2023, Cal-QL: Calibrated Offline RL Pre-Training for Efficient Online Fine-Tuning. [Website](https://nakamotoo.github.io/Cal-QL/), [Code](https://github.com/nakamotoo/Cal-QL).
 - ICML 2022, Temporal Difference Learning for Model Predictive Control. [Website](https://www.nicklashansen.com/td-mpc/), [Code](https://github.com/nicklashansen/tdmpc). Learning the dynamics model that are predictive of reward, and learning a terminal-value function by TD-learning. Use MPPI.
 - :star: RSS 2017, Preparing for the Unknown: Learning a Universal Policy with Online System Identification. Using an online system identification model to predict parameter $\mu$ given history, and $\mu$ is the input to the actual policy.
-
+- arXiv 2016, Building Machines That Learn and Think Like People. [Paper](https://arxiv.org/abs/1604.00289).
+- NeurIPS 2016, Learning Physical Intuition of Block Towers by Example. [Paper](https://proceedings.mlr.press/v48/lerer16.html).
 
 ## Talks
