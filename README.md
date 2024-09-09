@@ -6,6 +6,8 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Legged Robots
 
+- SCA 2024, PartwiseMPC: Interactive Control of Contact-Guided Motions. [Website](https://www.cs.ubc.ca/~van/papers/2024-partwiseMPC/index.html). Utilize contact keyframes as task description and partwise MPC.
+- arXiv 2024.07, Learning Multi-Modal Whole-Body Control for Real-World Humanoid Robots. [Website](https://masked-humanoid.github.io/mhc/). Mask commands so that the robots can track different command modalities.
 - arXiv 2024.04, Learning H-Infinity Locomotion Control. [Website](https://junfeng-long.github.io/HINF/). Adding a learnable disturber network to achieve the robustness of the policy.
 - arXiv 2024.08, PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots. [Paper](https://arxiv.org/abs/2408.13740). Use A2C framework, implicit state estimation by VAE, explicit state estimation by regression.
 - arXiv 2024.07, Berkeley Humanoid: A Research Platform for Learning-based Control. [Website](https://berkeley-humanoid.com/). A low-cost, DIY-style, mid-scale humanoid robot.
@@ -19,6 +21,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.03, RoboDuet: A Framework Affording Mobile-Manipulation and Cross-Embodiment. [Website](https://locomanip-duet.github.io/). First train locomotion when arm is fixed, and then train loco policy and arm policy jointly.
 - arXiv 2024.01, Adaptive Mobile Manipulation for Articulated Objects In the Open World. [Website](https://open-world-mobilemanip.github.io/). Learning at test time. Use CLIP to generate reward: compute the similarity score of the observed image and 2 prompts, "door that is closed" and "door that is open"
 - :star: RSS 2024, RL2AC: Reinforcement Learning-based Rapid Online Adaptive Control for Legged Robot Robust Locomotion. [Paper](https://enriquecoronadozu.github.io/rssproceedings2024/rss20/p060.pdf). Adding feed forward into PD controller.
+- RSS 2024, (Best Paper Award Finalist), Advancing Humanoid Locomotion: Mastering Challenging Terrains with Denoising World Model Learning. [Paper](https://arxiv.org/abs/2408.14472).
 - RSS 2024, Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers. [Website](https://fanshi14.github.io/me/rss24.html).
 - L4DC 2024, Learning and Deploying Robust Locomotion Policies with Minimal Dynamics Randomization. [arXiv](https://arxiv.org/abs/2209.12878). RFI (Random Force Injection)
 - TRO 2024, Adaptive Force-Based Control of Dynamic Legged Locomotion over Uneven Terrain. [Paper](https://arxiv.org/abs/2307.04030). Incorporating adaptive control into a force-based control system.
@@ -77,7 +80,9 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 - arXiv 2024.08, All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents. [Website](https://imaei.github.io/project_pages/ario/).
 - arXiv 2024.08, Scaling Cross-Embodied Learning: One Policy for Manipulation, Navigation, Locomotion and Aviation. [Website](https://crossformer-model.github.io/), [Code](https://github.com/rail-berkeley/crossformer). Train a transformer policy for cross embodied robots by tokenizing observations and treating actions as readout tokens.
+- arXiv 2024.07, MAGIC-VFM: Meta-learning Adaptation for Ground Interaction Control with Visual Foundation Models. [Paper](https://arxiv.org/abs/2407.12304).
 - arXiv 2024.05, Hierarchical World Models as Visual Whole-Body Humanoid Controllers. [Website](https://www.nicklashansen.com/rlpuppeteer/), [Code](https://github.com/nicklashansen/puppeteer).First train a low-level tracking model using MoCapAct using TD-MPC2, and then train skills on down-stream tasks.
+- CoRL 2024, PianoMime: Learning a Generalist, Dexterous Piano Player from Internet Demonstrations. [Website](https://pianomime.github.io/).
 - arXiv 2024.02, Pushing the Limits of Cross-Embodiment Learning for Manipulation and Navigation. [Website](https://extreme-cross-embodiment.github.io/), [Code](https://github.com/JonathanYang0127/omnimimic/tree/release). A cross embodied transformer policy. Tokenize visual observations and generate actions through a conditional diffusion process.
 - RSS 2024, RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots. [Website](https://robocasa.ai/), [Code](https://github.com/robocasa/robocasa). A large-scale simulation framework, a lot of kitchens.
 - ICLR 2024, Spotlight. TD-MPC2: Scalable, Robust World Models for Continuous Control. [Website](https://www.tdmpc2.com/), [Code](https://github.com/nicklashansen/tdmpc2). Adding some tricks on top of TD-MPC.
@@ -85,6 +90,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - ICRA 2024, Safe Deep Policy Adaptation. [Website](https://sites.google.com/view/safe-deep-policy-adaptation), [Code](https://github.com/LeCAR-Lab/SafeDPA). Jointly learns adaptive policy and dynamics models in simulation, predicts environment configurations, and fine-tunes dynamics models with few-shot real-world data.
 - CoRL 2023 Oral, DATT: Deep Adaptive Trajectory Tracking for Quadrotor Control. [Website](https://sites.google.com/view/deep-adaptive-traj-tracking), [Code](https://github.com/KevinHuang8/DATT). Use L1 adaptive control to estimate disturbance.
 - NeurIPS 2023, Cal-QL: Calibrated Offline RL Pre-Training for Efficient Online Fine-Tuning. [Website](https://nakamotoo.github.io/Cal-QL/), [Code](https://github.com/nakamotoo/Cal-QL).
+- CVPR 2022, Masked Autoencoders Are Scalable Vision Learners. [Paper](https://arxiv.org/abs/2111.06377).  Mask random patches of the input image and reconstruct the missing pixels.
 - ICML 2022, Temporal Difference Learning for Model Predictive Control. [Website](https://www.nicklashansen.com/td-mpc/), [Code](https://github.com/nicklashansen/tdmpc). Learning the dynamics model that are predictive of reward, and learning a terminal-value function by TD-learning. Use MPPI.
 - :star: RSS 2017, Preparing for the Unknown: Learning a Universal Policy with Online System Identification. Using an online system identification model to predict parameter $\mu$ given history, and $\mu$ is the input to the actual policy.
 - arXiv 2016, Building Machines That Learn and Think Like People. [Paper](https://arxiv.org/abs/1604.00289).
