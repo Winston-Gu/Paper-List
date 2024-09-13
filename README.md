@@ -6,6 +6,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Legged Robots
 
+- arXiv 2024.09, One Policy to Run Them All: an End-to-end Learning Approach to Multi-Embodiment Locomotion. [Paper](https://arxiv.org/abs/2409.06366). Learn an abstract locomotion controller, encoder-decoder architecture.
 - SCA 2024, PartwiseMPC: Interactive Control of Contact-Guided Motions. [Website](https://www.cs.ubc.ca/~van/papers/2024-partwiseMPC/index.html). Utilize contact keyframes as task description and partwise MPC.
 - arXiv 2024.07, Learning Multi-Modal Whole-Body Control for Real-World Humanoid Robots. [Website](https://masked-humanoid.github.io/mhc/). Mask commands so that the robots can track different command modalities.
 - arXiv 2024.04, Learning H-Infinity Locomotion Control. [Website](https://junfeng-long.github.io/HINF/). Adding a learnable disturber network to achieve the robustness of the policy.
@@ -28,19 +29,23 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - :star: CoRL 2022, Deep Whole-Body Control: Learning a Unified Policy for Manipulation and Locomotion. [Website](https://manipulation-locomotion.github.io/), [Code](https://github.com/MarkFzp/Deep-Whole-Body-Control). Advantage mixing and Regularized Online Adaptation.
 - ICRA 2024, Learning Force Control for Legged Manipulation. [Website](https://tif-twirl-13.github.io/learning-compliance), [Thesis Paper](https://tif-twirl-13.github.io/learning-compliance/learning_compliance_thesis.pdf). End effector force tracking.
 - :star: TRO 2024, Not Only Rewards but Also Constraints: Applications on Legged Robot Locomotion. [Paper](https://ieeexplore.ieee.org/abstract/document/10530429). Utilize constraints instead of reward function. Use IPO to solve the constrained RL problem.
+- arXiv 2023.04, Torque-based Deep Reinforcement Learning for Task-and-Robot Agnostic Learning on Bipedal Robots Using Sim-to-Real Transfer. [Paper](https://arxiv.org/abs/2304.09434). The policy outputs torque directly at 250 HZ.
 - CoRL 2023, Learning to See Physical Properties with Active Sensing Motor Policies. [Website](https://gmargo11.github.io/active-sensing-loco/). Active Sensing: adding the error of physical properties estimation into reward function.
 - RSS 2023, Demonstrating a Walk in the Park: Learning to Walk in 20 Minutes With Model-Free Reinforcement Learning. [Website](https://sites.google.com/berkeley.edu/walk-in-the-park), [Code](https://github.com/ikostrikov/walk_in_the_park). Learning locomotion directly in real world, using SAC algorithms in Jax.
 - IROS 2023, Hierarchical Adaptive Control for Collaborative Manipulation of a Rigid Object by Quadrupedal Robots. [Paper](https://arxiv.org/abs/2303.06741).
 - ICRA 2023, Legs as Manipulator: Pushing Quadrupedal AgilityBeyond Locomotion. [Website](https://robot-skills.github.io/). Use one front leg as manipulator. First train locomotion and manipulation policy respectively, and then learn a behavior tree from demonstration to stitch previous skills together.
 - ICRA 2023, Hierarchical Adaptive Loco-manipulation Control for Quadruped Robots. [Paper](https://arxiv.org/abs/2209.13145). An adaptive controller to solve the locomotion and manipulation tasks simultaneously. Use the position and velocity error to update the adaptive controller for manipulations.
 - arXiv 2022.03, RoLoMa: Robust Loco-Manipulation for Quadruped Robots with Arms. [Paper](https://arxiv.org/abs/2203.01446)
+- ISRR 2022, Reference-Free Learning Bipedal Motor Skills via Assistive Force Curricula. [Paper](https://link.springer.com/chapter/10.1007/978-3-031-25555-7_21). Learning bipedal locomotion utilizing assistive force.
 - CoRL 2022, Oral. Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior. [Website](https://sites.google.com/view/gait-conditioned-rl/), [Github](https://github.com/Improbable-AI/walk-these-ways). Multiplicity of Behavior (MoB): learning a single policy that encodes a structured family of locomotion strategies that solve training tasks in different ways.
 - RSS 2022, Rapid Locomotion via Reinforcement Learning. [Website](https://agility.csail.mit.edu/), [Code](https://github.com/Improbable-AI/rapid-locomotion-rl). Implicit System Identification.
+- IROS 2022, PI-ARS: Accelerating Evolution-Learned Visual-Locomotion with Predictive Information Representations. [Paper](https://arxiv.org/abs/2207.13224). Predictive Information Representations: Learn an encoder to maximize predictive information (the mutual information between past and future.)
 - IROS 2022, Adapting Rapid Motor Adaptation for Bipedal Robots. [Paper](https://arxiv.org/abs/2205.15299). Further finetune the base policy $\pi_1$ with the imperfect extrinsics predicted by the adaptation module $\phi$.
 - RA-L 2022, Concurrent Training of a Control Policy and a State Estimator for Dynamic and Robust Legged Locomotion. [Paper](https://arxiv.org/abs/2202.05481)
 - :star: Science Robotics 2022, Learning Robust Perceptive Locomotion for Quadrupedal Robots in the Wild. [Paper](https://www.science.org/doi/10.1126/scirobotics.abk2822). Adding a belief state encoder based on attention mechanism, which can fuse perceptive information and proprioceptive information.
 - IROS 2021, Adaptive Force-based Control for Legged Robots. [Paper](https://arxiv.org/abs/2011.06236). L1 adaptive control law, force-based control.
 - CoRL 2021, Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning. [Paper](https://arxiv.org/abs/2109.11978).
+- RA-L 2020, Learning Fast Adaptation with Meta Strategy Optimization. [Paper](https://arxiv.org/abs/1909.12995). Finding the latent representations as an optimization problem.
 - Science Robotics, 2020, Multi-Expert Learning of Adaptive Legged Locomotion. [Paper](https://www.science.org/doi/10.1126/scirobotics.abb2174). Use gating neural network to learn the combination of expert skill networks.
 - Science Robotics 2020, Learning Quadrupedal Locomotion over Challenging Terrain. [Paper](https://arxiv.org/abs/2010.11251).
 - arXiv 2020.04, Learning Agile Robotic Locomotion Skills by Imitating Animals. [Paper](https://arxiv.org/abs/2004.00784), [Code](https://github.com/erwincoumans/motion_imitation).
