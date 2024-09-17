@@ -6,6 +6,10 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Legged Robots
 
+- Humanoids 2024, Know your limits! Optimize the behavior of bipedal robots through self-awareness. [Website](https://evm7.github.io/Self-AWare/). Generate many reference trajectories given textual commands, and use a self-awareness module to rank them.
+- arXiv 2024.09, PIP-Loco: A Proprioceptive Infinite Horizon Planning Framework for Quadrupedal Robot Locomotion. [Paper](https://arxiv.org/abs/2409.09441), [Code](https://github.com/StochLab/PIP-Loco). Training future horizon prediction in simulation, and use MPPI when deployment.
+- arXiv 2024.09, Learning Skateboarding for Humanoid Robots through Massively Parallel Reinforcement Learning. [Paper](https://arxiv.org/abs/2409.07846).
+- arXiv 2024.09, Learning to Open and Traverse Doors with a Legged Manipulator. [Paper](https://arxiv.org/abs/2409.04882).
 - arXiv 2024.09, One Policy to Run Them All: an End-to-end Learning Approach to Multi-Embodiment Locomotion. [Paper](https://arxiv.org/abs/2409.06366). Learn an abstract locomotion controller, encoder-decoder architecture.
 - SCA 2024, PartwiseMPC: Interactive Control of Contact-Guided Motions. [Website](https://www.cs.ubc.ca/~van/papers/2024-partwiseMPC/index.html). Utilize contact keyframes as task description and partwise MPC.
 - arXiv 2024.07, Learning Multi-Modal Whole-Body Control for Real-World Humanoid Robots. [Website](https://masked-humanoid.github.io/mhc/). Mask commands so that the robots can track different command modalities.
@@ -30,6 +34,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - ICRA 2024, Learning Force Control for Legged Manipulation. [Website](https://tif-twirl-13.github.io/learning-compliance), [Thesis Paper](https://tif-twirl-13.github.io/learning-compliance/learning_compliance_thesis.pdf). End effector force tracking.
 - :star: TRO 2024, Not Only Rewards but Also Constraints: Applications on Legged Robot Locomotion. [Paper](https://ieeexplore.ieee.org/abstract/document/10530429). Utilize constraints instead of reward function. Use IPO to solve the constrained RL problem.
 - arXiv 2023.04, Torque-based Deep Reinforcement Learning for Task-and-Robot Agnostic Learning on Bipedal Robots Using Sim-to-Real Transfer. [Paper](https://arxiv.org/abs/2304.09434). The policy outputs torque directly at 250 HZ.
+- arXiv 2023.03, Learning Bipedal Walking for Humanoids with Current Feedback. [Paper](https://arxiv.org/abs/2303.03724). Simulation poor torque tracking in simulation, measure and track torque in real robots.
 - CoRL 2023, Learning to See Physical Properties with Active Sensing Motor Policies. [Website](https://gmargo11.github.io/active-sensing-loco/). Active Sensing: adding the error of physical properties estimation into reward function.
 - RSS 2023, Demonstrating a Walk in the Park: Learning to Walk in 20 Minutes With Model-Free Reinforcement Learning. [Website](https://sites.google.com/berkeley.edu/walk-in-the-park), [Code](https://github.com/ikostrikov/walk_in_the_park). Learning locomotion directly in real world, using SAC algorithms in Jax.
 - IROS 2023, Hierarchical Adaptive Control for Collaborative Manipulation of a Rigid Object by Quadrupedal Robots. [Paper](https://arxiv.org/abs/2303.06741).
@@ -57,6 +62,9 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Robotics Manipulation
 
+- arXiv 2024.09, Hand-object interaction pretraining from videos. [Website](https://hgaurav2k.github.io/hop/), [Paper](https://arxiv.org/abs/2409.08273).
+- arXiv 2024.09, Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation. [Paper](https://arxiv.org/abs/2409.09016). Use a decoder to generate action from error embeddings.
+- arXiv 2024.09, Adaptive Control based Friction Estimation for Tracking Control of Robot Manipulators. [Paper](https://arxiv.org/abs/2409.05054). Adaptive control methods.
 - arXiv 2024.09, Fast Payload Calibration for Sensorless Contact Estimation Using Model Pre-training. [Paper](https://arxiv.org/abs/2409.03369).
 - arXiv 2024.08, RP1M: A Large-Scale Motion Dataset for Piano Playing with Bi-Manual Dexterous Robot Hands. [Website](https://rp1m.github.io/). A dataset built on RoboPianist with shadow hands.
 - arXiv 2024.08, ACE: A Cross-Platform Visual-Exoskeletons System for Low-Cost Dexterous Teleoperation. [Website](https://ace-teleop.github.io/), [Code](https://github.com/ACETeleop/ACETeleop). A teleoperation system.
