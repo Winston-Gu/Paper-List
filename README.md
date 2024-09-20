@@ -78,6 +78,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - RA-L 2024, On the Role of the Action Space in Robot Manipulation Learning and Sim-to-Real Transfer, [Arxiv](https://arxiv.org/abs/2312.03673). Benchmarked 13 action spaces in FRANKA manipulation skills learning.
 - CoRL 2023 Oral, VoxPoser: Composable 3D Value Map for Robotic Manipulation with Language Models. [Website](https://voxposer.github.io/), [Code](https://github.com/huangwl18/VoxPoser). Utilizing LLM and VLM to write code, thus generating affordance maps and constraint maps in 3D scene.
 - NeurIPS 2023 Spotlight, Learning Universal Policies via Text-Guided Video Generation. [Website](https://universal-policy.github.io/unipi/), [Code](https://github.com/flow-diffusion/AVDC), [Openreview](https://openreview.net/forum?id=bo8q5MRcwy). Formulate the sequential decision making problem as a text-conditioned video generation problem.
+- CoRL 2020, Transporter Networks: Rearranging the Visual World for Robotic Manipulation. [Website](https://transporternets.github.io/). Learning pick-conditioned placing via transporting for robotics manipulation.
 - IROS 2001, Adaptive force control of position/velocity controlled robots: theory and experiment. [Paper](https://ieeexplore.ieee.org/document/976374). Popose 2 velocity based implicit force trajectory tracking controllers
 - TMECH 1999, A Survey of Robot Interaction Control Schemes with Experimental Comparison. [Paper](https://ieeexplore.ieee.org/abstract/document/789685).
 - 1987, Dynamic Hybrid Position/Force Control of Robot Manipulators-Description of Hand Constraints and Calculation of Joint Driving Force. [Paper](https://ieeexplore.ieee.org/abstract/document/1087120).
@@ -91,6 +92,8 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Random Papers
 
+- arXiv 2024.09, Fine Manipulation Using a Tactile Skin: Learning in Simulation and Sim-to-Real Transfer. [Paper](https://arxiv.org/abs/2409.12735).
+- arXiv 2024.09, A Learning-based Quadcopter Controller with Extreme Adaptation. [Paper](https://arxiv.org/abs/2409.12949). RMA for adaptation, combine BC and RL on drones.
 - arXiv 2024.08, All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents. [Website](https://imaei.github.io/project_pages/ario/).
 - arXiv 2024.08, Scaling Cross-Embodied Learning: One Policy for Manipulation, Navigation, Locomotion and Aviation. [Website](https://crossformer-model.github.io/), [Code](https://github.com/rail-berkeley/crossformer). Train a transformer policy for cross embodied robots by tokenizing observations and treating actions as readout tokens.
 - arXiv 2024.07, MAGIC-VFM: Meta-learning Adaptation for Ground Interaction Control with Visual Foundation Models. [Paper](https://arxiv.org/abs/2407.12304).
