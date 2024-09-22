@@ -6,6 +6,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Legged Robots
 
+- arXiv 2024.09, Real-Time Whole-Body Control of Legged Robots with Model-Predictive Path Integral Control. [Website](https://whole-body-mppi.github.io/). MPPI on quadrupeds.
 - Humanoids 2024, Know your limits! Optimize the behavior of bipedal robots through self-awareness. [Website](https://evm7.github.io/Self-AWare/). Generate many reference trajectories given textual commands, and use a self-awareness module to rank them.
 - arXiv 2024.09, PIP-Loco: A Proprioceptive Infinite Horizon Planning Framework for Quadrupedal Robot Locomotion. [Paper](https://arxiv.org/abs/2409.09441), [Code](https://github.com/StochLab/PIP-Loco). Training future horizon prediction in simulation, and use MPPI when deployment.
 - arXiv 2024.09, Learning Skateboarding for Humanoid Robots through Massively Parallel Reinforcement Learning. [Paper](https://arxiv.org/abs/2409.07846).
@@ -40,6 +41,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - IROS 2023, Hierarchical Adaptive Control for Collaborative Manipulation of a Rigid Object by Quadrupedal Robots. [Paper](https://arxiv.org/abs/2303.06741).
 - ICRA 2023, Legs as Manipulator: Pushing Quadrupedal AgilityBeyond Locomotion. [Website](https://robot-skills.github.io/). Use one front leg as manipulator. First train locomotion and manipulation policy respectively, and then learn a behavior tree from demonstration to stitch previous skills together.
 - ICRA 2023, Hierarchical Adaptive Loco-manipulation Control for Quadruped Robots. [Paper](https://arxiv.org/abs/2209.13145). An adaptive controller to solve the locomotion and manipulation tasks simultaneously. Use the position and velocity error to update the adaptive controller for manipulations.
+- arXiv 2022.05, Bridging Model-based Safety and Model-free Reinforcement Learning through System Identification of Low Dimensional Linear Models. [Paper](https://arxiv.org/abs/2205.05787). Dynamics of Cassie under RL policies can be seen as a low dimensional linear system.
 - arXiv 2022.03, RoLoMa: Robust Loco-Manipulation for Quadruped Robots with Arms. [Paper](https://arxiv.org/abs/2203.01446)
 - ISRR 2022, Reference-Free Learning Bipedal Motor Skills via Assistive Force Curricula. [Paper](https://link.springer.com/chapter/10.1007/978-3-031-25555-7_21). Learning bipedal locomotion utilizing assistive force.
 - CoRL 2022, Oral. Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior. [Website](https://sites.google.com/view/gait-conditioned-rl/), [Github](https://github.com/Improbable-AI/walk-these-ways). Multiplicity of Behavior (MoB): learning a single policy that encodes a structured family of locomotion strategies that solve training tasks in different ways.
@@ -47,6 +49,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - IROS 2022, PI-ARS: Accelerating Evolution-Learned Visual-Locomotion with Predictive Information Representations. [Paper](https://arxiv.org/abs/2207.13224). Predictive Information Representations: Learn an encoder to maximize predictive information (the mutual information between past and future.)
 - IROS 2022, Adapting Rapid Motor Adaptation for Bipedal Robots. [Paper](https://arxiv.org/abs/2205.15299). Further finetune the base policy $\pi_1$ with the imperfect extrinsics predicted by the adaptation module $\phi$.
 - RA-L 2022, Concurrent Training of a Control Policy and a State Estimator for Dynamic and Robust Legged Locomotion. [Paper](https://arxiv.org/abs/2202.05481)
+- RA-L 2022, Combining Learning-Based Locomotion Policy With Model-Based Manipulation for Legged Mobile Manipulators. [Paper](https://ieeexplore.ieee.org/abstract/document/9684679?casa_token=jsU-9TWLq4oAAAAA%3AX5RmTX2AwUeHTlbAbKVHh_8-djFj-9JLlyXduwvMKe0nsyoPiGUiko5wwS0Rl3VL7HQKAm4). Decouple the manipulator control from base policy training by modeling the disturbances from the manipulator as predictable external wrenches.
 - :star: Science Robotics 2022, Learning Robust Perceptive Locomotion for Quadrupedal Robots in the Wild. [Paper](https://www.science.org/doi/10.1126/scirobotics.abk2822). Adding a belief state encoder based on attention mechanism, which can fuse perceptive information and proprioceptive information.
 - IROS 2021, Adaptive Force-based Control for Legged Robots. [Paper](https://arxiv.org/abs/2011.06236). L1 adaptive control law, force-based control.
 - CoRL 2021, Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning. [Paper](https://arxiv.org/abs/2109.11978).
