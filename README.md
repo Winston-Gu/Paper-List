@@ -6,6 +6,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Legged Robots
 
+- arXiv 2024.10, FRASA: An End-to-End Reinforcement Learning Agent for Fall Recovery and Stand Up of Humanoid Robots. [Paper](https://arxiv.org/abs/2410.08655). Training a DRL policy for fall recovery on kid size humanoid robots.
 - arXiv 2024.10, Learning Humanoid Locomotion over Challenging Terrain. [Arxiv](https://arxiv.org/abs/2410.03654). First pretrain using transformer to do next-sequnece prediction, then fine-tune with RL.
 - :star: SIGGRAPH Asia 2024, MaskedMimic: Unified Physics-Based Character Control Through Masked Motion Inpainting. [Website](https://research.nvidia.com/labs/par/maskedmimic/), [Code](https://github.com/NVlabs/ProtoMotions).
 - arXiv 2024.09, Real-Time Whole-Body Control of Legged Robots with Model-Predictive Path Integral Control. [Website](https://whole-body-mppi.github.io/). MPPI on quadrupeds.
@@ -67,6 +68,8 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Robotics Manipulation
 
+- :star: arXiv 2024.10, Overcoming Slow Decision Frequencies in Continuous Control: Model-Based Sequence Reinforcement Learning for Model-Free Control. [Paper](https://arxiv.org/abs/2410.08979). Policy model output a sequence of actions.
+- arXiv 2024.10, ARCap: Collecting High-quality Human Demonstrations for Robot Learning with Augmented Reality Feedback. [Website](https://stanford-tml.github.io/ARCap/), [Code](https://github.com/Ericcsr/ARCap). Using AR feedback when collecting human demonstrations.
 - arXiv 2024.09, Hand-object interaction pretraining from videos. [Website](https://hgaurav2k.github.io/hop/), [Paper](https://arxiv.org/abs/2409.08273).
 - arXiv 2024.09, Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation. [Paper](https://arxiv.org/abs/2409.09016). Use a decoder to generate action from error embeddings.
 - arXiv 2024.09, Adaptive Control based Friction Estimation for Tracking Control of Robot Manipulators. [Paper](https://arxiv.org/abs/2409.05054). Adaptive control methods.
