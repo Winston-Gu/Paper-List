@@ -6,9 +6,11 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Legged Robots
 
+- arXiv 2024.10, Physics-Informed Learning for the Friction Modeling of High-Ratio Harmonic Drives. [Arxiv](https://arxiv.org/abs/2410.12685#page=3.55). Estimate friction and compensate for huamnoid robots.
 - arXiv 2024.10, FRASA: An End-to-End Reinforcement Learning Agent for Fall Recovery and Stand Up of Humanoid Robots. [Paper](https://arxiv.org/abs/2410.08655). Training a DRL policy for fall recovery on kid size humanoid robots.
 - arXiv 2024.10, Learning Humanoid Locomotion over Challenging Terrain. [Arxiv](https://arxiv.org/abs/2410.03654). First pretrain using transformer to do next-sequnece prediction, then fine-tune with RL.
 - :star: SIGGRAPH Asia 2024, MaskedMimic: Unified Physics-Based Character Control Through Masked Motion Inpainting. [Website](https://research.nvidia.com/labs/par/maskedmimic/), [Code](https://github.com/NVlabs/ProtoMotions).
+- arXiv 2024.9 Whole-body end-effector pose tracking. [Arxiv](https://arxiv.org/abs/2409.16048). Training pose tracking task with command sampling.
 - arXiv 2024.09, Real-Time Whole-Body Control of Legged Robots with Model-Predictive Path Integral Control. [Website](https://whole-body-mppi.github.io/). MPPI on quadrupeds.
 - Humanoids 2024, Know your limits! Optimize the behavior of bipedal robots through self-awareness. [Website](https://evm7.github.io/Self-AWare/). Generate many reference trajectories given textual commands, and use a self-awareness module to rank them.
 - arXiv 2024.09, PIP-Loco: A Proprioceptive Infinite Horizon Planning Framework for Quadrupedal Robot Locomotion. [Paper](https://arxiv.org/abs/2409.09441), [Code](https://github.com/StochLab/PIP-Loco). Training future horizon prediction in simulation, and use MPPI when deployment.
@@ -68,6 +70,9 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Robotics Manipulation
 
+- arXiv 2024,10, ForceMimic: Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation. Force capture using UMI and train a hybrid force-position control policy.
+- arXiv 2024.10, DROP: Dexterous Reorientation via Online Planning. [Website](https://caltech-amber.github.io/drop/). Sampling-based online planning for dexterous manipulation.
+- arXiv 2024.10, Adaptive Compliance Policy: Learning Approximate Compliance for Diffusion Guided Control. [Website](https://adaptive-compliance.github.io/). Using diffusion policy as backbone, output a scalar value representing the stiffness manitude for compliance controller. Force sensors integrated.
 - :star: arXiv 2024.10, Overcoming Slow Decision Frequencies in Continuous Control: Model-Based Sequence Reinforcement Learning for Model-Free Control. [Paper](https://arxiv.org/abs/2410.08979). Policy model output a sequence of actions.
 - arXiv 2024.10, ARCap: Collecting High-quality Human Demonstrations for Robot Learning with Augmented Reality Feedback. [Website](https://stanford-tml.github.io/ARCap/), [Code](https://github.com/Ericcsr/ARCap). Using AR feedback when collecting human demonstrations.
 - arXiv 2024.09, Hand-object interaction pretraining from videos. [Website](https://hgaurav2k.github.io/hop/), [Paper](https://arxiv.org/abs/2409.08273).
@@ -107,6 +112,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.07, MAGIC-VFM: Meta-learning Adaptation for Ground Interaction Control with Visual Foundation Models. [Paper](https://arxiv.org/abs/2407.12304).
 - arXiv 2024.05, Hierarchical World Models as Visual Whole-Body Humanoid Controllers. [Website](https://www.nicklashansen.com/rlpuppeteer/), [Code](https://github.com/nicklashansen/puppeteer).First train a low-level tracking model using MoCapAct using TD-MPC2, and then train skills on down-stream tasks.
 - CoRL 2024, PianoMime: Learning a Generalist, Dexterous Piano Player from Internet Demonstrations. [Website](https://pianomime.github.io/).
+- IROS 2024m Robot Synesthesia: A Sound and Emotion Guided AI Painter. [Website](https://convexalpha.github.io/Robot-Synesthesia/). Let a robot manipulator to paint something.
 - arXiv 2024.02, Pushing the Limits of Cross-Embodiment Learning for Manipulation and Navigation. [Website](https://extreme-cross-embodiment.github.io/), [Code](https://github.com/JonathanYang0127/omnimimic/tree/release). A cross embodied transformer policy. Tokenize visual observations and generate actions through a conditional diffusion process.
 - RSS 2024, RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots. [Website](https://robocasa.ai/), [Code](https://github.com/robocasa/robocasa). A large-scale simulation framework, a lot of kitchens.
 - ICLR 2024, Spotlight. TD-MPC2: Scalable, Robust World Models for Continuous Control. [Website](https://www.tdmpc2.com/), [Code](https://github.com/nicklashansen/tdmpc2). Adding some tricks on top of TD-MPC.
