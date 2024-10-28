@@ -4,6 +4,13 @@ I will try to summarize each paper in one sentence. Important papers will be mar
 
 Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List).
 
+## Foundation Model for Robotics
+
+- arXiv 2024.10, Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust. [Website](https://arxiv.org/abs/2410.01971). Knowing which part of image is more sensitive to the task.
+- CoRL 2023, Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners. [Website](https://robot-help.github.io/). Draw inspiration from conformal prediction theory. Letting LLM output multipule plans and also the likelihood of each choices, then calibrate by using datasets or executing these plans.
+- arXiv 2024.03, Explore until Confident: Efficient Exploration for Embodied Question Answering. [Website](https://explore-eqa.github.io/). Leveraging VLM to output multiple possible plans, let the robot to explore until there is only one output from VLM.
+
+
 # Legged Robots
 
 - arXiv 2024.10, Physics-Informed Learning for the Friction Modeling of High-Ratio Harmonic Drives. [Arxiv](https://arxiv.org/abs/2410.12685#page=3.55). Estimate friction and compensate for huamnoid robots.
@@ -48,6 +55,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - ICRA 2023, Hierarchical Adaptive Loco-manipulation Control for Quadruped Robots. [Paper](https://arxiv.org/abs/2209.13145). An adaptive controller to solve the locomotion and manipulation tasks simultaneously. Use the position and velocity error to update the adaptive controller for manipulations.
 - arXiv 2022.05, Bridging Model-based Safety and Model-free Reinforcement Learning through System Identification of Low Dimensional Linear Models. [Paper](https://arxiv.org/abs/2205.05787). Dynamics of Cassie under RL policies can be seen as a low dimensional linear system.
 - arXiv 2022.03, RoLoMa: Robust Loco-Manipulation for Quadruped Robots with Arms. [Paper](https://arxiv.org/abs/2203.01446)
+- arXiv 2022.01, Sim-to-Lab-to-Real: Safe Reinforcement Learning with Shielding and Generalization Guarantees. [Paper](https://arxiv.org/abs/2201.08355). Safet-aware dual policy structure.
 - ISRR 2022, Reference-Free Learning Bipedal Motor Skills via Assistive Force Curricula. [Paper](https://link.springer.com/chapter/10.1007/978-3-031-25555-7_21). Learning bipedal locomotion utilizing assistive force.
 - CoRL 2022, Oral. Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior. [Website](https://sites.google.com/view/gait-conditioned-rl/), [Github](https://github.com/Improbable-AI/walk-these-ways). Multiplicity of Behavior (MoB): learning a single policy that encodes a structured family of locomotion strategies that solve training tasks in different ways.
 - RSS 2022, Rapid Locomotion via Reinforcement Learning. [Website](https://agility.csail.mit.edu/), [Code](https://github.com/Improbable-AI/rapid-locomotion-rl). Implicit System Identification.
@@ -89,6 +97,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - RSS 2024, Learning Manipulation by Predicting Interaction. [Website](https://opendrivelab.github.io/mpi.github.io/), [Code](https://github.com/OpenDriveLab/MPI).
 - RSS 2024, Any-point Trajectory Modeling for Policy Learning. [Website](https://xingyu-lin.github.io/atm/), [Code](https://github.com/Large-Trajectory-Model/ATM). Utilize points tracking in human videos for policy learning.
 - RA-L 2024, On the Role of the Action Space in Robot Manipulation Learning and Sim-to-Real Transfer, [Arxiv](https://arxiv.org/abs/2312.03673). Benchmarked 13 action spaces in FRANKA manipulation skills learning.
+- :star: CoRL 2023, AdaptSim: Task-Driven Simulation Adaptation for Sim-to-Real Transfer. [Website](https://irom-lab.github.io/AdaptSim/), [Code](https://github.com/irom-lab/AdaptSim). Iterately real2sim sysID.
 - CoRL 2023 Oral, VoxPoser: Composable 3D Value Map for Robotic Manipulation with Language Models. [Website](https://voxposer.github.io/), [Code](https://github.com/huangwl18/VoxPoser). Utilizing LLM and VLM to write code, thus generating affordance maps and constraint maps in 3D scene.
 - NeurIPS 2023 Spotlight, Learning Universal Policies via Text-Guided Video Generation. [Website](https://universal-policy.github.io/unipi/), [Code](https://github.com/flow-diffusion/AVDC), [Openreview](https://openreview.net/forum?id=bo8q5MRcwy). Formulate the sequential decision making problem as a text-conditioned video generation problem.
 - CoRL 2020, Transporter Networks: Rearranging the Visual World for Robotic Manipulation. [Website](https://transporternets.github.io/). Learning pick-conditioned placing via transporting for robotics manipulation.
