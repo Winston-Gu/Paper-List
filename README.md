@@ -20,6 +20,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.9 Whole-body end-effector pose tracking. [Arxiv](https://arxiv.org/abs/2409.16048). Training pose tracking task with command sampling.
 - arXiv 2024.09, Real-Time Whole-Body Control of Legged Robots with Model-Predictive Path Integral Control. [Website](https://whole-body-mppi.github.io/). MPPI on quadrupeds.
 - Humanoids 2024, Know your limits! Optimize the behavior of bipedal robots through self-awareness. [Website](https://evm7.github.io/Self-AWare/). Generate many reference trajectories given textual commands, and use a self-awareness module to rank them.
+- arXiv 2024.09, iWalker: Imperative Visual Planning for Walking Humanoid Robot. [Paper](https://arxiv.org/abs/2409.18361). Depth perception to planning, and then use model-based control.
 - arXiv 2024.09, PIP-Loco: A Proprioceptive Infinite Horizon Planning Framework for Quadrupedal Robot Locomotion. [Paper](https://arxiv.org/abs/2409.09441), [Code](https://github.com/StochLab/PIP-Loco). Training future horizon prediction in simulation, and use MPPI when deployment.
 - arXiv 2024.09, Learning Skateboarding for Humanoid Robots through Massively Parallel Reinforcement Learning. [Paper](https://arxiv.org/abs/2409.07846).
 - arXiv 2024.09, Learning to Open and Traverse Doors with a Legged Manipulator. [Paper](https://arxiv.org/abs/2409.04882).
@@ -78,6 +79,9 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Robotics Manipulation
 
+- arXiv 2024.10, DA-VIL: Adaptive Dual-Arm Manipulation with Reinforcement Learning and Variable Impedance Control. [Website](https://dualarmvil.github.io/Dual-Arm-VIL/), [Paper](https://arxiv.org/abs/2410.19712v1). RL policy output stiffness, and then passed into a QP solver to generate torque.
+- arXiv 2024.10, MILES: Making Imitation Learning Easy with Self-Supervision. [Paper](https://arxiv.org/abs/2410.19693). Automatic data collection and augmentation.
+- arXiv 2024.10, Learning Diffusion Policies from Demonstrations For Compliant Contact-rich Manipulation. [Paper](https://arxiv.org/abs/2410.19235). Diffusion policy output Cartesian end-effector poses and arm stiffness.
 - arXiv 2024,10, ForceMimic: Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation. Force capture using UMI and train a hybrid force-position control policy.
 - arXiv 2024.10, DROP: Dexterous Reorientation via Online Planning. [Website](https://caltech-amber.github.io/drop/). Sampling-based online planning for dexterous manipulation.
 - arXiv 2024.10, Adaptive Compliance Policy: Learning Approximate Compliance for Diffusion Guided Control. [Website](https://adaptive-compliance.github.io/). Using diffusion policy as backbone, output a scalar value representing the stiffness manitude for compliance controller. Force sensors integrated.
@@ -114,6 +118,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 # Random Papers
 
+- arXiv 2024.10, Motion Planning for Robotics: A Review for Sampling-based Planners. [Paper](https://arxiv.org/abs/2410.19414).
 - arXiv 2024.09, Fine Manipulation Using a Tactile Skin: Learning in Simulation and Sim-to-Real Transfer. [Paper](https://arxiv.org/abs/2409.12735).
 - arXiv 2024.09, A Learning-based Quadcopter Controller with Extreme Adaptation. [Paper](https://arxiv.org/abs/2409.12949). RMA for adaptation, combine BC and RL on drones.
 - arXiv 2024.08, All Robots in One: A New Standard and Unified Dataset for Versatile, General-Purpose Embodied Agents. [Website](https://imaei.github.io/project_pages/ario/).
