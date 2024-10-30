@@ -4,6 +4,31 @@ I will try to summarize each paper in one sentence. Important papers will be mar
 
 Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List).
 
+# Methods
+
+## Adapdation
+
+### State Estimation / Sys-ID
+
+- Dynamics as Prompts: In-Context Learning for Sim-to-Real System Identifications. [Website](https://sim2real-capture.github.io). Collect data in simulation, and use history data to predict the environment parameters in real time.
+- IROS 2024, Physically Consistent Online Inertial Adaptation for Humanoid Loco-manipulation. [Paper](https://arxiv.org/abs/2405.07901). Use EKF to estimate the inertial parameters of the payload on robot's hand. Integrate with a model-based controller on a humanoid.
+
+## Offline-to-Online
+
+- CoRL 2024, TRANSIC: Sim-to-Real Policy Transfer by Learning from Online Correction. [Website](https://transic-robot.github.io), [Code](https://github.com/transic-robot/transic-envs). Collect online human-in-the-loop teleoperation correction data, and learned an residual policy on top of base policy trained in simulation.
+
+## Force Control
+
+- arXiv 2024.10, Physics-Informed Learning for the Friction Modeling of High-Ratio Harmonic Drives. [Arxiv](https://arxiv.org/abs/2410.12685#page=3.55). Estimate friction and compensate for huamnoid robots.
+
+## World Models
+
+- arXiv 2024.10, Language Agents Meet Causality -- Bridging LLMs and Causal World Models. [Website](https://j0hngou.github.io/LLMCWM/). Using causal representation learning to learn casual variables, and then let LLM agent to plan.
+
+
+
+# Tasks
+
 ## Foundation Model for Robotics
 
 - arXiv 2024.10, Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust. [Website](https://arxiv.org/abs/2410.01971). Knowing which part of image is more sensitive to the task.
@@ -11,22 +36,28 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.03, Explore until Confident: Efficient Exploration for Embodied Question Answering. [Website](https://explore-eqa.github.io/). Leveraging VLM to output multiple possible plans, let the robot to explore until there is only one output from VLM.
 
 
-# Legged Robots
+## Humanoid Robots
 
-- arXiv 2024.10, Physics-Informed Learning for the Friction Modeling of High-Ratio Harmonic Drives. [Arxiv](https://arxiv.org/abs/2410.12685#page=3.55). Estimate friction and compensate for huamnoid robots.
+- arXiv 2024.10, HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots. [Website](https://hover-versatile-humanoid.github.io). First train a privileged oracle policy, then distill in to policies in different command modes by masking.
+- arXiv 2024.10, Whole-Body Dynamic Throwing with Legged Manipulators. [Paper](https://arxiv.org/abs/2410.05681). Whole-body object throwing by training with RL, the key is reward shaping.
+- arXiv 2024.09, iWalker: Imperative Visual Planning for Walking Humanoid Robot. [Paper](https://arxiv.org/abs/2409.18361). Depth perception to planning, and then use model-based control.
+- arXiv 2024.07, Learning Multi-Modal Whole-Body Control for Real-World Humanoid Robots. [Website](https://masked-humanoid.github.io/mhc/). Mask commands so that the robots can track different command modalities.
+- NeurIPS 2024, Harmony4D: A Video Dataset for In-The-Wild Close Human Interactions. [Website](https://jyuntins.github.io/harmony4d/), [Code](https://github.com/jyuntins/harmony4d). Multi human interaction dataset.
+- :star: SIGGRAPH Asia 2024, MaskedMimic: Unified Physics-Based Character Control Through Masked Motion Inpainting. [Website](https://research.nvidia.com/labs/par/maskedmimic/), [Code](https://github.com/NVlabs/ProtoMotions). First train a priviledged motion imitation policy, then distill into different command modes. Policy architecture is CVAE. Encoder can provide an offset on top of leared priors (learned by a transformer), and only prior and decoder are used during test time.
+- arXiv 2023.12, PhysHOI: Physics-Based Imitation of Dynamic Human-Object Interaction. [Website](https://wyhuai.github.io/physhoi-page/), [Code](https://github.com/wyhuai/PhysHOI). Utilize contact-graph rewards for better tracking.
+
+## Legged Robots
+
 - arXiv 2024.10, FRASA: An End-to-End Reinforcement Learning Agent for Fall Recovery and Stand Up of Humanoid Robots. [Paper](https://arxiv.org/abs/2410.08655). Training a DRL policy for fall recovery on kid size humanoid robots.
 - arXiv 2024.10, Learning Humanoid Locomotion over Challenging Terrain. [Arxiv](https://arxiv.org/abs/2410.03654). First pretrain using transformer to do next-sequnece prediction, then fine-tune with RL.
-- :star: SIGGRAPH Asia 2024, MaskedMimic: Unified Physics-Based Character Control Through Masked Motion Inpainting. [Website](https://research.nvidia.com/labs/par/maskedmimic/), [Code](https://github.com/NVlabs/ProtoMotions).
 - arXiv 2024.9 Whole-body end-effector pose tracking. [Arxiv](https://arxiv.org/abs/2409.16048). Training pose tracking task with command sampling.
 - arXiv 2024.09, Real-Time Whole-Body Control of Legged Robots with Model-Predictive Path Integral Control. [Website](https://whole-body-mppi.github.io/). MPPI on quadrupeds.
 - Humanoids 2024, Know your limits! Optimize the behavior of bipedal robots through self-awareness. [Website](https://evm7.github.io/Self-AWare/). Generate many reference trajectories given textual commands, and use a self-awareness module to rank them.
-- arXiv 2024.09, iWalker: Imperative Visual Planning for Walking Humanoid Robot. [Paper](https://arxiv.org/abs/2409.18361). Depth perception to planning, and then use model-based control.
 - arXiv 2024.09, PIP-Loco: A Proprioceptive Infinite Horizon Planning Framework for Quadrupedal Robot Locomotion. [Paper](https://arxiv.org/abs/2409.09441), [Code](https://github.com/StochLab/PIP-Loco). Training future horizon prediction in simulation, and use MPPI when deployment.
 - arXiv 2024.09, Learning Skateboarding for Humanoid Robots through Massively Parallel Reinforcement Learning. [Paper](https://arxiv.org/abs/2409.07846).
 - arXiv 2024.09, Learning to Open and Traverse Doors with a Legged Manipulator. [Paper](https://arxiv.org/abs/2409.04882).
 - arXiv 2024.09, One Policy to Run Them All: an End-to-end Learning Approach to Multi-Embodiment Locomotion. [Paper](https://arxiv.org/abs/2409.06366). Learn an abstract locomotion controller, encoder-decoder architecture.
 - SCA 2024, PartwiseMPC: Interactive Control of Contact-Guided Motions. [Website](https://www.cs.ubc.ca/~van/papers/2024-partwiseMPC/index.html). Utilize contact keyframes as task description and partwise MPC.
-- arXiv 2024.07, Learning Multi-Modal Whole-Body Control for Real-World Humanoid Robots. [Website](https://masked-humanoid.github.io/mhc/). Mask commands so that the robots can track different command modalities.
 - arXiv 2024.04, Learning H-Infinity Locomotion Control. [Website](https://junfeng-long.github.io/HINF/). Adding a learnable disturber network to achieve the robustness of the policy.
 - arXiv 2024.08, PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots. [Paper](https://arxiv.org/abs/2408.13740). Use A2C framework, implicit state estimation by VAE, explicit state estimation by regression.
 - arXiv 2024.07, Berkeley Humanoid: A Research Platform for Learning-based Control. [Website](https://berkeley-humanoid.com/). A low-cost, DIY-style, mid-scale humanoid robot.
@@ -73,12 +104,18 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2020.04, Learning Agile Robotic Locomotion Skills by Imitating Animals. [Paper](https://arxiv.org/abs/2004.00784), [Code](https://github.com/erwincoumans/motion_imitation).
 - IROS 2019, Sim-to-Real Transfer for Biped Locomotion. [Paper](https://arxiv.org/abs/1903.01390). Pre-sysID and post-sysID.
 - ICRA 2019, ALMA - Articulated Locomotion and Manipulation for a Torque-Controllable Robot. [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8794273). Track operational space motion and force references with a wholebody control algorithm that generates torque references for all the controllable joints by using hierarchical optimization.
+- :star: RSS 2017, Preparing for the Unknown: Learning a Universal Policy with Online System Identification. Using an online system identification model to predict parameter $\mu$ given history, and $\mu$ is the input to the actual policy.
 - ACC 2015, L1 Adaptive Control for Bipedal Robots with Control Lyapunov Function based Quadratic Programs. [Paper](https://ieeexplore.ieee.org/document/7170842).
 - ICRA 2015, Whole-body Pushing Manipulation with Contact Posture Planning of Large and Heavy Object for Humanoid Robot. [Paper](https://ieeexplore.ieee.org/abstract/document/7139995) . Generate pushing motion for humanoid robots, based on ZMP.
 
 
-# Robotics Manipulation
+## Manipulation
 
+- arXiv 2024.10, One-Step Diffusion Policy: Fast Visuomotor Policies via Diffusion Distillation. [Website](https://research.nvidia.com/labs/dir/onedp/), [Paper](https://arxiv.org/abs/2410.21257). Distill diffusion policy into a one-step action generator. Fomularize the gradient of KL divergence into a score-difference loss.
+- arXiv 2024.10, M3Bench: Benchmarking Whole-body Motion Generation for Mobile Manipulation in 3D Scenes. [Website](https://arxiv.org/abs/2410.06678). A benchmark for mobile manipulation in household scenes with many tasks.
+- arXiv 2024.10, Discovering Robotic Interaction Modes with Discrete Representation Learning. [Website](https://actaim2.github.io). Self-supervised, Gaussian Mixture VAE. Splits the policy into a discrete mode selector and an action predictor.
+- arXiv 2024.10, Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning. [Website](https://hil-serl.github.io), [Code](https://github.com/rail-berkeley/hil-serl). Real world RL with human in the loop corrections. Many designs made this data-efficeint.
+- arXiv 2024.10, Combining Deep Reinforcement Learning with a Jerk-Bounded Trajectory Generator for Kinematically Constrained Motion Planning. [Paper](https://arxiv.org/abs/2410.20907). Refine RL output actions to make it jerk-bounded.
 - arXiv 2024.10, DA-VIL: Adaptive Dual-Arm Manipulation with Reinforcement Learning and Variable Impedance Control. [Website](https://dualarmvil.github.io/Dual-Arm-VIL/), [Paper](https://arxiv.org/abs/2410.19712v1). RL policy output stiffness, and then passed into a QP solver to generate torque.
 - arXiv 2024.10, MILES: Making Imitation Learning Easy with Self-Supervision. [Paper](https://arxiv.org/abs/2410.19693). Automatic data collection and augmentation.
 - arXiv 2024.10, Learning Diffusion Policies from Demonstrations For Compliant Contact-rich Manipulation. [Paper](https://arxiv.org/abs/2410.19235). Diffusion policy output Cartesian end-effector poses and arm stiffness.
@@ -110,11 +147,22 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - 1987, Dynamic Hybrid Position/Force Control of Robot Manipulators-Description of Hand Constraints and Calculation of Joint Driving Force. [Paper](https://ieeexplore.ieee.org/abstract/document/1087120).
 - 1981, Hybrid Position/Force Control of Manipulators. [Paper](https://asmedigitalcollection.asme.org/dynamicsystems/article/103/2/126/400298/Hybrid-Position-Force-Control-of-Manipulators).
 
+## Visual Robot Learning
+
+- arXiv 2024.09, Neural Fields in Robotics: A Survey. [Website](https://robonerf.github.io/survey/index.html).
+
+
+## Planning
+
+- arXiv 2024.10, DARE: Diffusion Policy for Autonomous Robot Exploration. [Paper](https://arxiv.org/abs/2410.16687). One-step diffusion process for planning and exploration.
 
 # Reinforcement Learning
 
 - arXiv 2018.10, Exploration by Random Network Distillation. [Paper](https://arxiv.org/abs/1810.12894). RND for exploration.
 - :star: ICML 2017, Curiosity-driven Exploration by Self-supervised Prediction. [Website](https://pathak22.github.io/noreward-rl/), [Code](https://github.com/pathak22/noreward-rl). Formulate curiosity as the error in an agent’s ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model.
+
+
+# Language Models
 
 # Random Papers
 
@@ -136,8 +184,5 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - NeurIPS 2023, Cal-QL: Calibrated Offline RL Pre-Training for Efficient Online Fine-Tuning. [Website](https://nakamotoo.github.io/Cal-QL/), [Code](https://github.com/nakamotoo/Cal-QL).
 - CVPR 2022, Masked Autoencoders Are Scalable Vision Learners. [Paper](https://arxiv.org/abs/2111.06377).  Mask random patches of the input image and reconstruct the missing pixels.
 - ICML 2022, Temporal Difference Learning for Model Predictive Control. [Website](https://www.nicklashansen.com/td-mpc/), [Code](https://github.com/nicklashansen/tdmpc). Learning the dynamics model that are predictive of reward, and learning a terminal-value function by TD-learning. Use MPPI.
-- :star: RSS 2017, Preparing for the Unknown: Learning a Universal Policy with Online System Identification. Using an online system identification model to predict parameter $\mu$ given history, and $\mu$ is the input to the actual policy.
 - arXiv 2016, Building Machines That Learn and Think Like People. [Paper](https://arxiv.org/abs/1604.00289).
 - NeurIPS 2016, Learning Physical Intuition of Block Towers by Example. [Paper](https://proceedings.mlr.press/v48/lerer16.html).
-
-## Talks
