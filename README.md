@@ -111,6 +111,8 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 ## Manipulation
 
+- arXiv 2024.10, Robots Pre-Train Robots: Manipulation-Centric Robotic Representation from Large-Scale Robot Datasets. [Website](https://robots-pretrain-robots.github.io).
+- arXiv 2024.10, Local Policies Enable Zero-shot Long Horizon Manipulation. [Website](https://mihdalal.github.io/manipgen/). Distill ~1000 RL experts into a generalist policy. Use a variant of dagger for better performance.
 - arXiv 2024.10, One-Step Diffusion Policy: Fast Visuomotor Policies via Diffusion Distillation. [Website](https://research.nvidia.com/labs/dir/onedp/), [Paper](https://arxiv.org/abs/2410.21257). Distill diffusion policy into a one-step action generator. Fomularize the gradient of KL divergence into a score-difference loss.
 - arXiv 2024.10, M3Bench: Benchmarking Whole-body Motion Generation for Mobile Manipulation in 3D Scenes. [Website](https://arxiv.org/abs/2410.06678). A benchmark for mobile manipulation in household scenes with many tasks.
 - arXiv 2024.10, Discovering Robotic Interaction Modes with Discrete Representation Learning. [Website](https://actaim2.github.io). Self-supervised, Gaussian Mixture VAE. Splits the policy into a discrete mode selector and an action predictor.
@@ -163,6 +165,11 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 
 # Language Models
+
+
+# Learning
+
+- arXiv 2020.12, Rethinking Bias-Variance Trade-off for Generalization of Neural Networks. [Paper](https://arxiv.org/abs/2002.11328).The variance is unimodal **or** bell-shaped.
 
 # Random Papers
 
