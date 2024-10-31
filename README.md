@@ -24,7 +24,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 ## World Models
 
 - arXiv 2024.10, Language Agents Meet Causality -- Bridging LLMs and Causal World Models. [Website](https://j0hngou.github.io/LLMCWM/). Using causal representation learning to learn casual variables, and then let LLM agent to plan.
-
+- CoRL 2022, DayDreamer: World Models for Physical Robot Learning. [Website](https://danijar.com/project/daydreamer/). Imagined rollouts in latent space.
 
 
 # Tasks
@@ -42,9 +42,14 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.10, Whole-Body Dynamic Throwing with Legged Manipulators. [Paper](https://arxiv.org/abs/2410.05681). Whole-body object throwing by training with RL, the key is reward shaping.
 - arXiv 2024.09, iWalker: Imperative Visual Planning for Walking Humanoid Robot. [Paper](https://arxiv.org/abs/2409.18361). Depth perception to planning, and then use model-based control.
 - arXiv 2024.07, Learning Multi-Modal Whole-Body Control for Real-World Humanoid Robots. [Website](https://masked-humanoid.github.io/mhc/). Mask commands so that the robots can track different command modalities.
+- arXiv 2024.06, PlaMo: Plan and Move in Rich 3D Physical Environments. [Paper](https://arxiv.org/abs/2406.18237). Integrate path planner and motion controller for humanoid characters to navigate in 3d scenes.
+- arXiv 2024.05, Hierarchical World Models as Visual Whole-Body Humanoid Controllers. [Website](https://www.nicklashansen.com/rlpuppeteer/), [Code](https://github.com/nicklashansen/puppeteer). First train a tracking agent that takes abstact command as input, then train hierarchical RL for downstream tasks.
 - NeurIPS 2024, Harmony4D: A Video Dataset for In-The-Wild Close Human Interactions. [Website](https://jyuntins.github.io/harmony4d/), [Code](https://github.com/jyuntins/harmony4d). Multi human interaction dataset.
 - :star: SIGGRAPH Asia 2024, MaskedMimic: Unified Physics-Based Character Control Through Masked Motion Inpainting. [Website](https://research.nvidia.com/labs/par/maskedmimic/), [Code](https://github.com/NVlabs/ProtoMotions). First train a priviledged motion imitation policy, then distill into different command modes. Policy architecture is CVAE. Encoder can provide an offset on top of leared priors (learned by a transformer), and only prior and decoder are used during test time.
 - arXiv 2023.12, PhysHOI: Physics-Based Imitation of Dynamic Human-Object Interaction. [Website](https://wyhuai.github.io/physhoi-page/), [Code](https://github.com/wyhuai/PhysHOI). Utilize contact-graph rewards for better tracking.
+- ICLR 2019, Neural probabilistic motor primitives for humanoid control. [Paper](https://arxiv.org/abs/1811.11711). Encode motion dataset into a latent space, and use decoder as a policy.
+- MIG 2018, Physics-based motion capture imitation with deep reinforcement learning. [Paper](https://dl.acm.org/doi/10.1145/3274247.3274506). Training RL to control humanoid characters. Maybe the start point of isaacgym.
+
 
 ## Legged Robots
 
@@ -111,6 +116,8 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 ## Manipulation
 
+- arXiv 2024.10, Multi-Task Interactive Robot Fleet Learning with Visual World Models. [Website](https://ut-austin-rpl.github.io/sirius-fleet/). First train a model to predict future trajectories, and then finetune using deployment data.,
+- arXiv 2024.10, HuDOR: Bridging the Human to Robot Dexterity Gap through Object-Oriented Rewards. [Website](https://object-rewards.github.io). Get object trajectories from videos, and calculate the reward based on the object's state.
 - arXiv 2024.10, Robots Pre-Train Robots: Manipulation-Centric Robotic Representation from Large-Scale Robot Datasets. [Website](https://robots-pretrain-robots.github.io).
 - arXiv 2024.10, Local Policies Enable Zero-shot Long Horizon Manipulation. [Website](https://mihdalal.github.io/manipgen/). Distill ~1000 RL experts into a generalist policy. Use a variant of dagger for better performance.
 - arXiv 2024.10, One-Step Diffusion Policy: Fast Visuomotor Policies via Diffusion Distillation. [Website](https://research.nvidia.com/labs/dir/onedp/), [Paper](https://arxiv.org/abs/2410.21257). Distill diffusion policy into a one-step action generator. Fomularize the gradient of KL divergence into a score-difference loss.
