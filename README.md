@@ -36,7 +36,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.03, Explore until Confident: Efficient Exploration for Embodied Question Answering. [Website](https://explore-eqa.github.io/). Leveraging VLM to output multiple possible plans, let the robot to explore until there is only one output from VLM.
 
 
-## Humanoid Robots
+## Humanoid Robots & Characters
 
 - arXiv 2024.10, HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots. [Website](https://hover-versatile-humanoid.github.io). First train a privileged oracle policy, then distill in to policies in different command modes by masking.
 - arXiv 2024.10, Whole-Body Dynamic Throwing with Legged Manipulators. [Paper](https://arxiv.org/abs/2410.05681). Whole-body object throwing by training with RL, the key is reward shaping.
@@ -46,7 +46,9 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.05, Hierarchical World Models as Visual Whole-Body Humanoid Controllers. [Website](https://www.nicklashansen.com/rlpuppeteer/), [Code](https://github.com/nicklashansen/puppeteer). First train a tracking agent that takes abstact command as input, then train hierarchical RL for downstream tasks.
 - NeurIPS 2024, Harmony4D: A Video Dataset for In-The-Wild Close Human Interactions. [Website](https://jyuntins.github.io/harmony4d/), [Code](https://github.com/jyuntins/harmony4d). Multi human interaction dataset.
 - :star: SIGGRAPH Asia 2024, MaskedMimic: Unified Physics-Based Character Control Through Masked Motion Inpainting. [Website](https://research.nvidia.com/labs/par/maskedmimic/), [Code](https://github.com/NVlabs/ProtoMotions). First train a priviledged motion imitation policy, then distill into different command modes. Policy architecture is CVAE. Encoder can provide an offset on top of leared priors (learned by a transformer), and only prior and decoder are used during test time.
+- SIGGRAPH 2024, Taming Diffusion Probabilistic Models for Character Control. [Website](https://aiganimation.github.io/CAMDM/). A transformer-based conditional autoregressive motion diffusion model for character control.
 - arXiv 2023.12, PhysHOI: Physics-Based Imitation of Dynamic Human-Object Interaction. [Website](https://wyhuai.github.io/physhoi-page/), [Code](https://github.com/wyhuai/PhysHOI). Utilize contact-graph rewards for better tracking.
+- arXiv 2023.12, MoConVQ: Unified Physics-Based Motion Control via Scalable Discrete Representations. [Website](https://moconvq.github.io).
 - ICLR 2019, Neural probabilistic motor primitives for humanoid control. [Paper](https://arxiv.org/abs/1811.11711). Encode motion dataset into a latent space, and use decoder as a policy.
 - MIG 2018, Physics-based motion capture imitation with deep reinforcement learning. [Paper](https://dl.acm.org/doi/10.1145/3274247.3274506). Training RL to control humanoid characters. Maybe the start point of isaacgym.
 
@@ -116,6 +118,8 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 
 ## Manipulation
 
+- arXiv 2024.10, DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning. [Website](https://dexmimicgen.github.io). An automated data generation system for humanoids manipulation.
+- arXiv 2024.10, EgoMimic | Scaling Imitation Learning through Egocentric Video. [Website](https://egomimic.github.io). Align human data and robot teleop data, and then do imitation learning.
 - arXiv 2024.10, Multi-Task Interactive Robot Fleet Learning with Visual World Models. [Website](https://ut-austin-rpl.github.io/sirius-fleet/). First train a model to predict future trajectories, and then finetune using deployment data.,
 - arXiv 2024.10, HuDOR: Bridging the Human to Robot Dexterity Gap through Object-Oriented Rewards. [Website](https://object-rewards.github.io). Get object trajectories from videos, and calculate the reward based on the object's state.
 - arXiv 2024.10, Robots Pre-Train Robots: Manipulation-Centric Robotic Representation from Large-Scale Robot Datasets. [Website](https://robots-pretrain-robots.github.io).
@@ -142,6 +146,7 @@ Inspired by my friend Ze's [Reading List](https://github.com/YanjieZe/Paper-List
 - arXiv 2024.08, A Survey of Embodied Learning for Object-Centric Robotic Manipulation. [Paper](https://arxiv.org/abs/2408.11537).
 - arXiv 2024.08, Real-time Dexterous Telemanipulation with an End-Effect-Oriented Learning-based Approach. [Paper](https://arxiv.org/abs/2408.00853). First using DDPG to train robots to follow operator's command offline, then test it online.
 - arXiv 2024.03, CoPa: General Robotic Manipulation through Spatial Constraints of Parts with Foundational Model. [Website](https://copa-2024.github.io/).
+- CoRL 2024, 3D-ViTac Learning Fine-Grained Manipulation with Visuo-Tactile Sensing. [Website](https://binghao-huang.github.io/3D-ViTac/).
 - :star: RSS 2024, Dynamic On-Palm Manipulation via Controlled Sliding. [Website](https://dynamic-controlled-sliding.github.io/), [Code](https://github.com/DAIRLab/dairlib/tree/plate_balancing/examples/franka). Using hierarchical control methods: The system is modeled as LCS (Linear Complementarity Model), and then use C3 (Complementary Consensus Control) algorithms to solve. Low-level OSC tracking controller track the end-effector positions and force given by MPC.
 - :star: RSS 2024, Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots. [Website](https://umi-gripper.github.io/), [Code](https://github.com/real-stanford/universal_manipulation_interface). A data collection framework.
 - RSS 2024, Learning Manipulation by Predicting Interaction. [Website](https://opendrivelab.github.io/mpi.github.io/), [Code](https://github.com/OpenDriveLab/MPI).
